@@ -1,0 +1,251 @@
+save 
+
+  try {
+            mySavedGames = new PrintStream(new File("saved_games/saved_games.txt"));
+        } catch (final FileNotFoundException e) {
+            e.printStackTrace();
+        }        
+        
+//    /**
+//     * 
+//     */
+//    private void loadGame() {
+//        final Scanner input = new Scanner("saved_games/saved_games.txt");  
+//        while (input.hasNextLine()) {
+//            final String line = input.nextLine();
+//            final Scanner lineInput = new Scanner(line);
+//            if (lineInput.hasNext()) {
+//                final String marker = lineInput.next();
+//                switch (marker) {
+//                    case "current piece":   
+//                        loadCurrentPiece(lineInput); break;
+//                    case "next piece": 
+//                        loadNextPiece(lineInput); break;
+//                    case "blocks": 
+//                        loadBlocks(lineInput); break;
+//                    case "score": 
+//                        loadScore(lineInput); break;
+//                    case "lines": 
+//                        loadLines(lineInput); break;
+//                    case "level": 
+//                        loadLevel(lineInput); break;
+//                    case "timer": 
+//                        loadTimer(lineInput); break;
+//                    default:
+//                        break;
+//                }
+//            }
+//        }
+//    }
+//    private void loadTimer(final Scanner theLineInput) {
+//        myTimer.setDelay(theLineInput.nextInt());               
+//    }
+//
+//    private void loadLevel(final Scanner theLineInput) {
+//        myStat.setMyLevel(theLineInput.nextInt());
+//    }
+//
+//    private void loadLines(final Scanner theLineInput) {
+//        myStat.setMyLines(theLineInput.nextInt());
+//        
+//    }
+//
+//    private void loadScore(final Scanner theLineInput) {
+//        myStat.setMyScore(theLineInput.nextInt());
+//        
+//    }
+//
+//    private void loadBlocks(final Scanner theLineInput) {
+//        myBoard.getFrozenBlocks().clear();
+//        final Block[] blocks = new Block[myBoard.getWidth()];
+//        int counter = 0;
+//        while (theLineInput.hasNext()) {             
+//            final String block = theLineInput.next();
+//            blocks[counter] = Block.valueOf(block);
+//            counter++;
+//        }
+//        myBoard.getFrozenBlocks().add(blocks);
+//    }
+//
+//    private Piece loadNextPiece(final Scanner theLineInput) {
+//        final String name = theLineInput.next();
+//        final int x = theLineInput.nextInt();
+//        final int y = theLineInput.nextInt();
+//        final int[][] rotation = new int[4][2];
+//        for (int i = 0; i < rotation.length; i++) {
+//            for (int j = 0; j < rotation[0].length; j++) {
+//                rotation[i][j] = theLineInput.nextInt();
+//            }
+//        }
+//        
+//        return null;
+//    }
+//
+//    private void loadCurrentPiece(final Scanner theLineInput) {
+//        // TODO Auto-generated method stub
+//        
+//    }
+//        
+
+
+
+        
+//                mySavedGames.print("current piece " 
+//                                + myBoard.getCurrentPiece().getClass().getSimpleName() + " ");
+//                mySavedGames.print(myBoard.getCurrentPiece().getX() + " "
+//                                   + myBoard.getCurrentPiece().getY() + " ");
+//                int[][] rotation = ((AbstractPiece) myBoard.getCurrentPiece()).getRotation();
+//                for (int i= 0; i < rotation.length; i++) {
+//                    int[] coordinates = rotation[i];
+//                    for (int j = 0; j < coordinates.length; j++) {
+//                        mySavedGames.print(coordinates[j] + " ");
+//                    }
+//                }
+//                
+//                mySavedGames.println();
+//                mySavedGames.print("next piece " 
+//                                   + myBoard.getNextPiece().getClass().getSimpleName());
+//                mySavedGames.println();
+//                final List<Block[]> blocks = myBoard.getFrozenBlocks();
+//                for (int i = 0; i < blocks.size(); i++) {
+//                    final Block[] block = blocks.get(i);
+//                    mySavedGames.print("blocks ");
+//                    for (int j = 0; j < block.length; j++) {
+//                        mySavedGames.print(block[j] + " ");
+//                    }
+//                    mySavedGames.println();
+//                }
+//                mySavedGames.println("score " + myStat.getMyScore());
+//                mySavedGames.println("lines " + myStat.getMyLines());                
+//                mySavedGames.println("level " + myStat.getMyLevel());
+//                mySavedGames.println("timer " + myTimer.getDelay());
+
+
+
+ /**
+//     * ************************************MODIFIED*******************************************
+//     * 
+//     * Creates a new game on a Board of the specified width and height
+//     * and loads the given set of pieces.
+//     * 
+//     * @param theWidth The width of the board
+//     * @param theHeight The height of the board
+//     * @param thePieces The pieces to use
+//     * @param theGameFromLoad Indicate a new game has been loaded from saved games.
+//     */
+//    public void newGame(final int theWidth,
+//                        final int theHeight,
+//                        final Deque<Piece> thePieces,
+//                        final Piece theCurrentPiece, final Piece theNextPiece) {
+//        
+//            if (theWidth < MIN_SIZE || theHeight < MIN_SIZE) {
+//                throw new IllegalArgumentException();
+//            }
+//            
+//            myWidth = theWidth;
+//            myHeight = theHeight;
+//            
+//            if (thePieces == null) {
+//                myPieces.clear();
+//            } else {
+//                myPieces = thePieces;
+//            }
+//            
+//            myCurrentPiece = theCurrentPiece;
+//            myNextPiece = theNextPiece;
+//            myGameOver = false;       
+//            
+//            setChanged();
+//            notifyObservers("New Game from Load");
+//           
+//    }
+
+
+   private class MyLoadListener implements ActionListener {
+        
+        private Piece myCurrentPiece;
+        
+        private Piece myNextPiece;
+        
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            final Scanner input = new Scanner("saved_games/saved_games.txt");  
+            while (input.hasNextLine()) {
+                final String line = input.nextLine();
+                final Scanner lineInput = new Scanner(line);
+                if (lineInput.hasNext()) {
+                    final String marker = lineInput.next();
+                    switch (marker) {
+                        case "current piece":   
+                            loadCurrentPiece(lineInput); break;
+                        case "next piece": 
+                            loadNextPiece(lineInput); break;
+                        case "blocks": 
+                            loadBlocks(lineInput); break;
+                        case "score": 
+                            loadScore(lineInput); break;
+                        case "lines": 
+                            loadLines(lineInput); break;
+                        case "level": 
+                            loadLevel(lineInput); break;
+                        case "timer": 
+                            loadTimer(lineInput); break;
+                        default:
+                            break;
+                    }
+                }
+                //myBoard.newGame(theWidth, theHeight, thePieces, theCurrentPiece, theNextPiece);
+            }
+        }
+
+        private void loadTimer(final Scanner theLineInput) {
+            myTimer.setDelay(theLineInput.nextInt());               
+        }
+
+        private void loadLevel(final Scanner theLineInput) {
+            myStat.setMyLevel(theLineInput.nextInt());
+        }
+
+        private void loadLines(final Scanner theLineInput) {
+            myStat.setMyLines(theLineInput.nextInt());
+            
+        }
+
+        private void loadScore(final Scanner theLineInput) {
+            myStat.setMyScore(theLineInput.nextInt());
+            
+        }
+
+        private void loadBlocks(final Scanner theLineInput) {
+            myBoard.getFrozenBlocks().clear();
+            final Block[] blocks = new Block[myBoard.getWidth()];
+            int counter = 0;
+            while (theLineInput.hasNext()) {             
+                final String block = theLineInput.next();
+                blocks[counter] = Block.valueOf(block);
+                counter++;
+            }
+            myBoard.getFrozenBlocks().add(blocks);
+        }
+
+        private Piece loadNextPiece(final Scanner theLineInput) {
+            final String name = theLineInput.next();
+            final int x = theLineInput.nextInt();
+            final int y = theLineInput.nextInt();
+            final int[][] rotation = new int[4][2];
+            for (int i = 0; i < rotation.length; i++) {
+                for (int j = 0; j < rotation[0].length; j++) {
+                    rotation[i][j] = theLineInput.nextInt();
+                }
+            }
+            
+            return null;
+        }
+
+        private void loadCurrentPiece(final Scanner theLineInput) {
+            // TODO Auto-generated method stub
+            
+        }
+            
+        
+    }

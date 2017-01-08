@@ -1,0 +1,17 @@
+TCSS 305 D - Programming Practicum
+Instructor: Alan Fowler
+Assignment 6 - Tetris
+
+Author: Trung Dang
+
+Credits: 
+- Tetris theme: Nhaccuatui.com.
+- Mp3cut.net
+- drop.wav: User farbin on FreeSound.org
+- success.wav: User gunz on FreeSound.org
+- game over.wav: User notchfilter on FreeSound.org
+- arcade theme: User tyopos on FreeSound.org
+- level up.wav: User AdamWeeden on FreeSound.org
+
+Icon:
+- tetris-icon.png: taken from IconArchive.com
