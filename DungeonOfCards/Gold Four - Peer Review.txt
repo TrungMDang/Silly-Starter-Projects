@@ -1,0 +1,103 @@
+Gold Four
+
+Game Title: A Simple Dungeon?
+
+First impression: Interesting rougelike game combined with dungeon exploration. Is it infinite?
+
+Graphics and Controls: 5
+The game has impressive number of graphics. Not only there are different kinds of monsters but they also vary in color according to the difficulty level. Furthermore, the dungeon textures are changed at every new game and level. The complexity of animated elements is good: Player can move, attack, die, and do not go into walls; monsters can move, attack on their own, and they obey physics rule just like the player. There are projectile’ animations as well. The controls are well-laid but attacking using space is a little hard at first. Thumb up for ability to mute music.
+
+Interactions: 5
+The game has 2 type of interaction: collision and range detection. Different objects colliding have different results. For example, chests restore and add health, monsters and projectiles cause health to drop, and sword causes monsters to take damage. In addition to collision, it is interesting to note that some monsters can track and chase the player. This is clever since it adds a layer of difficulty to the game. 
+
+Gameplay: 4
+The game has typical gameplay that belongs to its genre. There is no user interface except basic information such as score, level, and health. The challenges posed are simple but difficult to attain. If one is lucky enough to find the big blue chests, the game can be played forever since more health is added which makes the player almost invincible. The game is easy to learn but hard to advance. However, the game is infinite and random which makes it enjoyable to play.
+
+Completeness: 5
+Overall, the game experience from beginning to end is surprisingly good. The infinity of the game means winning condition is not clearly defined. There is a simple opening screen with a play button and an announcement with replay button when player is dead. There is sufficient game instruction for player to learn quickly. The music fits really well with the overall mood and actions of the game and is pleasant to hear. 
+
+Fun: 4
+The game is very fun to play. Although the challenge of each level is simple (go to the next one), various numbers of enemies make it difficult, hilarious, and rewarding to play. Because each play and each level of dungeon are randomly generated, the game has good replay-ability.
+
+Verdict: A very good game with simple concepts. 
+
+
+
+
+
+Blue Two
+
+Game Title: Megaman Blue!
+
+First impression: Very like the classic Megaman with classic graphics and music.
+
+Graphics and Controls: 4
+This game has very good graphics. The number of enemy types is 5 which are fairly sufficient given the short duration of the run. Still, the complexity of the animated elements is limited. Most enemies only move in one direction to the left. The Megaman however, has more complexity and is able to jump, shoot, move both directions, and crouch. Sometimes when respawning, Megaman would start out of the screen. This is a major issue. Controls of the game are simple and sufficient. The ability to mute music is a plus.
+
+Interactions: 4
+The interaction of the game is simple. The game has one type of interaction: player colliding with projectile from enemies, spikes, enemies themselves and player’s projectile colliding with enemies. In both, the player’s health or enemies’ health are deducted by some points. The complexity of the interactions is not sufficient. For example, spike and projectiles’ collision boxes are a little big.
+
+Gameplay: 4
+The game has typical gameplay that belongs to its genre. The user interface is simple and appropriate. The texts labeling the control are sufficiently big enough to see. The challenges posed are simple. The game is easy to learn and advance but there is only one level.
+
+Completeness: 4
+Overall, the game experience from beginning to end is pleasant. The winning and losing conditions are typical of its genre. There is no opening/closing screen except announcing the player has lost the game. There is no game instruction but the game is simple enough for player to figure out what to do. The music is pleasant to hear but sometimes a little too fast. 
+
+Fun: 4
+The game is fun to play. Although the challenge is simple (defeating the boss), the big collision boxes for spikes and enemies’ projectiles actually make the game more difficult and entertaining to play but soon frustrating. The add-on voices when losing are fun to hear and stimulating as well. The game has little replay-ability since the map is the same and enemies are the same. The game has some novelty.
+
+Verdict: A good game with appropriate and fun touches. While lacking some key aspect, the game is enjoyable to play.
+
+
+
+
+
+Gold Two
+
+Game title: Make America Great Again!
+
+First impression: It seems like a fun game with two sides of politics. It makes the player wonder the gameplay right at the welcoming screen.
+
+Graphics and Controls: 4
+The game has flags for 50 states, 6 animated characters, and two backgrounds. This is very good given the time of the project. The graphics are not custom and the animated ones have fair complexity: they can move on their own or follow another character. The animations are not complex: most characters have only run and idle animation. The controls are basic and an ease to learn. There is no control for muting the music.
+
+Interactions: 5
+The game has fair amount of interactions. When player collides with bullets and assassins, health is deducted. When player collides with the special character, health is added. When player collides with flags, score is increased until threshold for the next level. Secret service agent character is able to follow player, is dead if collides with a bullet, and kill an assassin if colliding with one. The game state is fairly complex since it has to remember the position of the generated flags and characters. 
+
+Gameplay: 4
+The game has good and simple gameplay. The challenge here is quite difficult. The player has to avoid both bullets and assassins. Although there is a secret service agent protecting the player, it is quite entertaining to try to collect the flag when the agent is eliminated. There are only 2 levels but with various adversaries, it is challenging to reach the second level and finish it. The learning curve is not steep. 
+
+Completeness: 4
+The experience from beginning to end is satisfying because there are lots of adversaries. The winning and losing conditions are appropriate for this game. There is a title screen with buttons but some don’t work as expected. There is a detail instruction about game rules, winning, and losing conditions. There is a winning screen with appropriate graphics with respect to game goal. Music is pleasant.
+
+Fun: 5
+The game is very enjoyable because of the gameplay. It is fun to watch secret agent follows the player and kills assassins. It is even more fun when assassins are hit by bullets. The game has good replay-ability since the flags are generated at random. Also, characters except player and the agent move at random. The game has good novelty.
+
+Verdict: A creative game with simple concept. 
+
+
+
+
+Red One
+
+Game Title: Run For Your Life
+
+First impression: Look like a fun game but does it live up to expectation?
+
+Graphics and Controls: 4
+The game has fair number of animated graphics. The complexity of animated elements is sufficient: the player has attacking animations, jumping, running, and special moves. The enemies also have the same. The controls are sufficient and wisely chosen. The player does not need to reach hand to the other end of the keyboard to play and the key layout is not too cramped. However, the controls require some learning at first.
+
+Interactions: 5
+The game has simple interaction: collision between different characters and projectiles. The behavior is expected for this kind of collision. One bonus point is that enemies try to face the player and chase the player until they get in range. 
+
+Gameplay: 4
+The game is a typical example of a 2D platformer. The interface is appropriate for showing player’s health and mana bars. The challenges posed are extreme difficult. It is almost impossible to reach parts of the game after the first 2 enemies. This is probably due to player not mastered the game yet. There are health packs scattered throughout the game and for defeating enemies.
+The beginning of the game has a surprising twist. Normally, player assumes the character can only move to the right since the left is a cliff. However, farther left are some platforms and a bonus health pack. It is satisfying to discover this secret. The game is not easy to advance.
+
+Completeness: 4
+Since it may be impossible to reach the end level without mastering the game, the completeness of the game lacks a tiny bit. Overall, the experience of the game is good but frustrating when player cannot reach a platform due to issue in controls. There is an intro screen with complete control layout. The game has some background story as well. Music and sounds are pleasant.
+
+Fun: 4
+The game is fun to play but very frustrating after the 2 enemies because the moving platform is too high up and the path ahead is a cliff. The game has many secrets so it is possible that this is another secret of the game to discover. The game has little replay-ability since the map and enemies placement will be the same. 
+
+Verdict: Good game with good controls. However, the mechanics of the game could have been better.
