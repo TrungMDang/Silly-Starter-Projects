@@ -30,10 +30,11 @@ I also added sounds which were later improved by my teamates to suit the style o
   - downloads assets, set up and start the game.
   
 ###Team
+```
 Christopher Marriott - instructor
 Matthew Cles
 Brandon Scholer
 Trung Dang
-
+```
 
 
