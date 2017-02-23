@@ -13,3 +13,6 @@ was the only thing I did, the game model was provided.
 - View
   - Included a main class which creates a GUI with various components implemented by the other 6 classes.
 
+#### How to play the game:
+- Clone this repository.
+- The Tetris.jar file is all you need. Just double-click it and enjoy.

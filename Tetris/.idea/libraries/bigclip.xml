@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="bigclip">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/resources/sounds/bigclip.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/resources/sounds/bigclip.jar!/" />
+    </SOURCES>
+  </library>
+</component>
