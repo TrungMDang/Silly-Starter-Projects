@@ -45,4 +45,4 @@ Thumbs.db
 
 # JAR files # 
 ######################
-LanguageLibraryDerby.jar
+!LanguageLibraryDerby.jar
