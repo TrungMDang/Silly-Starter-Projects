@@ -41,3 +41,8 @@ gradle.xml
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
+# JAR files # 
+######################
+!LanguageLibraryDerby.jar
