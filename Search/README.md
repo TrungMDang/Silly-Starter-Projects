@@ -12,7 +12,31 @@ The problem input is a graph. Search algorithms used:
 
 #### To run
 
-Just clone this repository. You will need Python installed.
+- Just clone this repository. You will need Python installed.
+- Add Python to your system environment variable (You can do this at installation, too).
+- Run CMD and navigate to this folder.
+Run this command to find available syntax:
+	```
+	python pacman.py -h
+	```
+Commands I used (each line is a separate command):
+	```
+	python pacman.py
+	python pacman.py --layout testMaze --pacman GoWestAgent
+	python pacman.py --layout tinyMaze --pacman GoWestAgent
+	python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch
+	python pacman.py -l tinyMaze -p SearchAgent
+	python pacman.py -l mediumMaze -p SearchAgent
+	python pacman.py -l bigMaze -z .5 -p SearchAgent
+	python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs
+	python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5
+	python eightpuzzle.py
+	python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+	python pacman.py -l mediumDottedMaze -p StayEastSearchAgent
+	python pacman.py -l mediumScaryMaze -p StayWestSearchAgent
+	python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+	```
+
 
 #### Credits
 
