@@ -19,7 +19,7 @@ Run this command to find available syntax:
 	```
 	python pacman.py -h
 	```
-Commands I used (each line is a separate command):
+Commands I used (each line is a separate command):\
 	python pacman.py\
 	python pacman.py --layout testMaze --pacman GoWestAgent\
 	python pacman.py --layout tinyMaze --pacman GoWestAgent\
